@@ -1,0 +1,367 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding-top: 45px;
+}
+
+/* Main */
+.register-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 45px);
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Step Wrapper */
+.step-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    position: relative;
+}
+
+/* Back Arrow */
+.back-arrow {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.back-arrow:hover {
+    color: #FF8411;
+}
+
+/* Steps Indicator */
+.steps-indicator {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.step.active .step-circle {
+    background-color: #FF8411;
+}
+
+.step-label {
+    font-size: 11px;
+    text-align: center;
+    color: #666;
+    line-height: 1.3;
+}
+
+.step.active .step-label {
+    color: #FF8411;
+    font-weight: bold;
+}
+
+/* Line between steps */
+.step-line {
+    width: 50px;
+    height: 2px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Card */
+.register-box {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #FF8411;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.register-box h2 {
+    font-size: 18px;
+    color: #FF8411;
+}
+
+.register-box p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Inputs */
+.register-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.register-box input:focus {
+    border-color: #FF8411;
+}
+
+/* Button */
+.get-started-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffaa55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background-color: #FF8411;
+}
+
+/* Completed Step */
+.step.completed .step-circle {
+    background-color: #FF8411;
+    color: white;
+}
+
+.step.completed .step-label {
+    color: #FF8411;
+    font-weight: bold;
+}
+
+/* Completed Line */
+.step-line.completed {
+    background-color: #FF8411;
+}
+
+/* Profile Box */
+.profile-box {
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FF8411;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* Gender Dropdown */
+.gender-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #999;
+    outline: none;
+}
+
+.gender-select:focus {
+    border-color: #FF8411;
+}
+
+/* Footer Text */
+.footer-text {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.footer-text a {
+    color: #FF8411;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Success Box */
+.success-box {
+    width: 380px;
+    padding: 40px 30px;
+    text-align: center;
+    gap: 15px;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Success Icon */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    clip-path: polygon(
+        50% 0%, 61% 5%, 74% 5%, 82% 15%,
+        95% 20%, 97% 34%, 100% 50%, 97% 66%,
+        95% 80%, 82% 85%, 74% 95%, 61% 95%,
+        50% 100%, 39% 95%, 26% 95%, 18% 85%,
+        5% 80%, 3% 66%, 0% 50%, 3% 34%,
+        5% 20%, 18% 15%, 26% 5%, 39% 5%
+    );
+}
+
+.success-icon .pi-check {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Go Home Button */
+.go-home-btn {
+    background-color: #ccc;
+    color: #333;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.go-home-btn:hover {
+    background-color: #FF8411;
+    color: white;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background-color: #cc6a00;
+}
+
+body.dark-mode .register-main {
+    background-color: #0f0f0f;
+}
+
+body.dark-mode .register-box {
+    background: #1a1a1a;
+    border-color: #FF8411;
+    color: #e0e0e0;
+    box-shadow: 0px 4px 15px rgba(255,132,17,0.15);
+}
+
+body.dark-mode .register-box h2 {
+    color: #FF8411;
+}
+
+body.dark-mode .register-box p {
+    color: #aaa;
+}
+
+body.dark-mode .register-box input,
+body.dark-mode .gender-select {
+    background-color: #222;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.dark-mode .register-box input:focus {
+    border-color: #FF8411;
+}
+
+body.dark-mode .section-title {
+    color: #FF8411;
+}
+
+body.dark-mode .step-circle {
+    background-color: #333;
+}
+
+body.dark-mode .step-line {
+    background-color: #333;
+}
+
+body.dark-mode .step.active .step-circle {
+    background-color: #FF8411;
+}
+
+body.dark-mode .step.active .step-label {
+    color: #FF8411;
+}
+
+body.dark-mode .step.completed .step-circle {
+    background-color: #FF8411;
+}
+
+body.dark-mode .step.completed .step-label {
+    color: #FF8411;
+}
+
+body.dark-mode .step-line.completed {
+    background-color: #FF8411;
+}
+
+body.dark-mode .step-label {
+    color: #888;
+}
+
+body.dark-mode .back-arrow {
+    color: #FF8411;
+}
+
+body.dark-mode .success-icon {
+    background-color: #2ecc71;
+}
+
+body.dark-mode .go-home-btn {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .go-home-btn:hover {
+    background-color: #FF8411;
+    color: white;
+}
+
+body.dark-mode .footer-text {
+    color: #888;
+}
+
+body.dark-mode .footer-text a {
+    color: #FF8411;
+}
+
+body.dark-mode .theme-btn {
+    border-color: white !important;
+    color: white !important;
+}

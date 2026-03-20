@@ -1,0 +1,447 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding-top: 45px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FF8411;
+    color: white;
+    padding: 8px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-buttons button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
+.nav-buttons button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.theme-btn {
+    font-size: 16px !important;
+    padding: 4px 8px !important;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-left {
+    flex: 1;
+    max-width: 520px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: #fff0e0;
+    color: #FF8411;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255,132,17,0.3);
+}
+
+.hero-left h1 {
+    font-size: 42px;
+    color: #111;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.hero-left h1 span {
+    color: #FF8411;
+}
+
+.hero-left p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Download Buttons */
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dl-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.dl-btn i {
+    font-size: 26px;
+}
+
+.dl-btn div {
+    display: flex;
+    flex-direction: column;
+}
+
+.dl-sub {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.dl-main {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.android-btn {
+    background-color: #FF8411;
+    color: white;
+}
+
+.android-btn:hover {
+    background-color: #cc6a00;
+    transform: translateX(5px);
+}
+
+.ios-btn {
+    background-color: #111;
+    color: white;
+}
+
+.ios-btn:hover {
+    background-color: #333;
+    transform: translateX(5px);
+}
+
+.windows-btn {
+    background-color: white;
+    color: #333;
+    border-color: #FF8411;
+}
+
+.windows-btn:hover {
+    background-color: #fff0e0;
+    transform: translateX(5px);
+}
+
+/* QR Card */
+.hero-right {
+    flex-shrink: 0;
+}
+
+.qr-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 8px 30px rgba(255,132,17,0.15);
+    border: 2px solid rgba(255,132,17,0.2);
+    width: 220px;
+}
+
+.qr-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #FF8411;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.qr-card-header i {
+    font-size: 18px;
+}
+
+.qr-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.qr-hint {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+/* ===== FEATURES STRIP ===== */
+.features-strip {
+    background: #FF8411;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.feature-item i {
+    font-size: 16px;
+}
+
+.feature-divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+}
+
+/* ===== PLATFORM SECTION ===== */
+.platform-section {
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.platform-cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.platform-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.platform-card:hover {
+    border-color: #FF8411;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 30px rgba(255,132,17,0.2);
+}
+
+.featured-card {
+    border-color: #FF8411;
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 30px rgba(255,132,17,0.25);
+}
+
+.featured-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF8411;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.platform-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px;
+    font-size: 28px;
+}
+
+.android-icon {
+    background-color: #e8f5e9;
+    color: #2ecc71;
+}
+
+.ios-icon {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+.windows-icon {
+    background-color: #fff0e0;
+    color: #FF8411;
+}
+
+.platform-card h3 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.platform-card p {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 16px;
+}
+
+.platform-card ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.platform-card ul li {
+    font-size: 13px;
+    color: #555;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.platform-card ul li i {
+    color: #FF8411;
+    font-size: 12px;
+}
+
+.platform-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #FF8411;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.platform-btn:hover {
+    background-color: #cc6a00;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background-color: #cc6a00;
+}
+
+body.dark-mode .hero-left h1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .hero-left p {
+    color: #aaa;
+}
+
+body.dark-mode .hero-badge {
+    background-color: rgba(255,132,17,0.15);
+}
+
+body.dark-mode .windows-btn {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .windows-btn:hover {
+    background-color: rgba(255,132,17,0.15);
+}
+
+body.dark-mode .qr-card {
+    background: #1a1a1a;
+    border-color: rgba(255,132,17,0.3);
+}
+
+body.dark-mode .features-strip {
+    background-color: #cc6a00;
+}
+
+body.dark-mode .section-heading {
+    color: #e0e0e0;
+}
+
+body.dark-mode .platform-card {
+    background: #1a1a1a;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .platform-card:hover {
+    border-color: #FF8411;
+    box-shadow: 0px 8px 30px rgba(255,132,17,0.2);
+}
+
+body.dark-mode .platform-card h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .platform-card ul li {
+    color: #aaa;
+}
+
+body.dark-mode .android-icon {
+    background-color: rgba(46,204,113,0.15);
+}
+
+body.dark-mode .ios-icon {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .windows-icon {
+    background-color: rgba(255,132,17,0.15);
+}

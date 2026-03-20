@@ -1,0 +1,439 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding-top: 45px;
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FF8411;
+    color: white;
+    padding: 8px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-buttons button {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-left: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid rgba(255,255,255,0.6);
+    background: transparent;
+    color: white;
+    transition: all 0.2s;
+}
+
+.nav-buttons button:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: white;
+}
+
+.login-btn {
+    background: white !important;
+    color: #FF8411 !important;
+    font-weight: bold;
+    border-color: white !important;
+}
+
+.login-btn:hover {
+    background: #fff0e0 !important;
+}
+
+.theme-btn {
+    font-size: 15px !important;
+    padding: 4px 8px !important;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    min-height: calc(100vh - 45px - 55px);
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: #fff0e0;
+    color: #FF8411;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255,132,17,0.3);
+}
+
+.left-section h1 {
+    font-size: 38px;
+    color: #111;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.left-section h1 span {
+    color: #FF8411;
+}
+
+.left-section p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Hero Features */
+.hero-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.hero-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.hero-feature-item i {
+    color: #FF8411;
+    font-size: 16px;
+    width: 20px;
+}
+
+/* Hero Buttons */
+.hero-btns {
+    display: flex;
+    gap: 12px;
+}
+
+.hero-register-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background-color: #FF8411;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.hero-register-btn:hover {
+    background-color: #cc6a00;
+    transform: translateY(-2px);
+}
+
+.hero-download-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background-color: white;
+    color: #FF8411;
+    border: 2px solid #FF8411;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.hero-download-btn:hover {
+    background-color: #fff0e0;
+    transform: translateY(-2px);
+}
+
+/* Right Section — Login Box */
+.right-section {
+    flex-shrink: 0;
+}
+
+.login-box {
+    background: white;
+    width: 340px;
+    border-radius: 20px;
+    border: 2px solid rgba(255,132,17,0.25);
+    box-shadow: 0px 8px 40px rgba(255,132,17,0.15);
+    overflow: hidden;
+}
+
+/* Login Box Header */
+.login-box-header {
+    background: linear-gradient(135deg, #FF8411, #ffaa55);
+    padding: 24px 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+.login-box-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    font-size: 22px;
+}
+
+.login-box-header h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.login-box-header p {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+/* QR Wrapper */
+.qr-wrapper {
+    padding: 20px;
+    text-align: center;
+}
+
+.qr-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    border: 3px solid #fff0e0;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.qr-overlay-text {
+    font-size: 11px;
+    color: #aaa;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #eee;
+}
+
+.divider span {
+    font-size: 12px;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+/* Aadhaar Login Button */
+.aadhaar-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: calc(100% - 40px);
+    margin: 0 20px 15px;
+    padding: 11px;
+    background-color: #fff0e0;
+    color: #FF8411;
+    border: 2px solid #FF8411;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.aadhaar-login-btn:hover {
+    background-color: #FF8411;
+    color: white;
+}
+
+/* Steps Collapse */
+.steps-collapse {
+    border-top: 1px solid #f0f0f0;
+}
+
+.steps-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #888;
+    transition: background 0.2s;
+}
+
+.steps-toggle:hover {
+    background-color: #f9f9f9;
+    color: #FF8411;
+}
+
+.steps-content {
+    padding: 0 20px 15px;
+}
+
+.steps-content ol {
+    padding-left: 18px;
+}
+
+.steps-content ol li {
+    font-size: 12px;
+    color: #777;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    margin-left: -18px;
+}
+
+.steps-content ol li i {
+    color: #FF8411;
+    width: 16px;
+    font-size: 13px;
+}
+
+/* Bottom Strip */
+.bottom-strip {
+    background: #FF8411;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.strip-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.strip-item i {
+    font-size: 15px;
+}
+
+.strip-divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #0f0f0f;
+}
+
+body.dark-mode .navbar {
+    background-color: #cc6a00;
+}
+
+body.dark-mode .left-section h1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .left-section p {
+    color: #aaa;
+}
+
+body.dark-mode .hero-badge {
+    background-color: rgba(255,132,17,0.15);
+}
+
+body.dark-mode .hero-feature-item {
+    color: #aaa;
+}
+
+body.dark-mode .hero-download-btn {
+    background-color: #1a1a1a;
+    color: #FF8411;
+}
+
+body.dark-mode .hero-download-btn:hover {
+    background-color: rgba(255,132,17,0.15);
+}
+
+body.dark-mode .login-box {
+    background: #1a1a1a;
+    border-color: rgba(255,132,17,0.3);
+    box-shadow: 0px 8px 40px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .qr-image {
+    border-color: rgba(255,132,17,0.3);
+}
+
+body.dark-mode .divider::before,
+body.dark-mode .divider::after {
+    background-color: #333;
+}
+
+body.dark-mode .aadhaar-login-btn {
+    background-color: rgba(255,132,17,0.1);
+}
+
+body.dark-mode .steps-toggle {
+    color: #666;
+}
+
+body.dark-mode .steps-toggle:hover {
+    background-color: #222;
+}
+
+body.dark-mode .steps-content ol li {
+    color: #888;
+}
+
+body.dark-mode .steps-collapse {
+    border-color: #2a2a2a;
+}
+
+body.dark-mode .bottom-strip {
+    background-color: #cc6a00;
+}
