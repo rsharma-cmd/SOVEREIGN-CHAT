@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './pages/landing'
 import Home from './pages/Home'
 import Register from './pages/Register'
 import Mobile from './pages/Mobile'
@@ -11,7 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/mobile" element={<Mobile />} />
         <Route path="/profile" element={<Profile />} />

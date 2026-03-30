@@ -12,3 +12,13 @@ createRoot(document.getElementById('root')).render(
     </ThemeProvider>
   </StrictMode>,
 )
+
+import { LanguageProvider } from './context/LanguageContext'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <ThemeProvider>
+    <LanguageProvider>   {/* ← add karo */}
+      <App />
+    </LanguageProvider>
+  </ThemeProvider>
+)

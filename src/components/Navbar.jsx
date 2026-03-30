@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-      <div className="logo">SOVEREIGN</div>
+      <div className="logo">⚡SOVREIGN</div>
       <div className="nav-buttons">
         <button onClick={() => navigate('/download')}>Download Now</button>
         <button onClick={() => navigate('/register')}>Register With Aadhaar</button>

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 
 const Download = () => {
   const navigate = useNavigate()
@@ -12,7 +12,7 @@ const Download = () => {
       <section className="hero">
         <div className="hero-left">
           <div className="hero-badge">🔒 Secure & Private</div>
-          <h1>Download <span>Sovereign</span></h1>
+          <h1>Download <span>SOVREIGN</span></h1>
           <p>Stay connected with complete privacy. Available on all platforms — free forever.</p>
 
           <div className="download-buttons">
@@ -79,7 +79,7 @@ const Download = () => {
             <ul>
               <li><i className="pi pi-check"></i> Direct APK download</li>
               <li><i className="pi pi-check"></i> Auto updates</li>
-              <li><i className="pi pi-check"></i> Lightweight 25MB</li>
+              <li><i className="pi pi-check"></i> Lightweight 110MB</li>
             </ul>
             <a href="#" className="platform-btn">
               <i className="pi pi-download"></i> Download APK

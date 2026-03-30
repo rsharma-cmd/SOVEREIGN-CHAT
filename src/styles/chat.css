@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #FFF4E8;
     overflow: hidden;
 }
 
@@ -19,6 +19,8 @@
     box-shadow: 0 2px 15px rgba(255,132,17,0.3);
     z-index: 100;
     flex-shrink: 0;
+    position: sticky;
+    top: 0;
 }
 
 .chat-navbar-left {
@@ -71,13 +73,13 @@
 /* ===== FLOATING SIDEBAR ===== */
 .chat-sidebar {
     width: 70px;
-    background: white;
+    background: #FFFBF7;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
     gap: 8px;
-    box-shadow: 2px 0 15px rgba(0,0,0,0.06);
+    box-shadow: 2px 0 15px rgba(255,132,17,0.08);
     z-index: 50;
     justify-content: space-between;
 }
@@ -148,16 +150,16 @@
 /* ===== CHAT LIST PANEL ===== */
 .chat-list-panel {
     width: 300px;
-    background: white;
+    background: #FFFBF7;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid rgba(0,0,0,0.06);
+    border-right: 1px solid rgba(255,132,17,0.1);
     flex-shrink: 0;
 }
 
 .chat-list-header {
     padding: 18px 15px 12px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
 }
 
 .chat-list-header h2 {
@@ -171,7 +173,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    background: #f5f5f5;
+    background: #FFF4E8;
     border-radius: 12px;
     padding: 8px 12px;
 }
@@ -195,7 +197,7 @@
     display: flex;
     gap: 6px;
     padding: 10px 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
 }
 
 .filter-tab {
@@ -204,7 +206,7 @@
     border: none;
     font-size: 12px;
     cursor: pointer;
-    background: #f0f0f0;
+    background: #FFF4E8;
     color: #888;
     transition: all 0.2s;
 }
@@ -320,7 +322,7 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    background: #f5f5f5;
+    background: #FFF4E8;
 }
 
 /* Welcome Screen */
@@ -332,6 +334,7 @@
     align-items: center;
     gap: 12px;
     color: #aaa;
+    background: #FFF4E8;
 }
 
 .welcome-icon {
@@ -375,9 +378,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background: white;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    background: #FFFBF7;
+    border-bottom: 1px solid rgba(255,132,17,0.1);
+    box-shadow: 0 2px 10px rgba(255,132,17,0.06);
 }
 
 .chat-header-left {
@@ -407,7 +410,7 @@
     height: 36px;
     border-radius: 10px;
     border: none;
-    background: #f5f5f5;
+    background: #FFF4E8;
     color: #888;
     font-size: 16px;
     display: flex;
@@ -430,6 +433,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    background: #FFF4E8;
 }
 
 /* Messages */
@@ -442,11 +446,11 @@
 }
 
 .message-them {
-    background: white;
+    background: #FFFBF7;
     color: #333;
     align-self: flex-start;
     border-bottom-left-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(255,132,17,0.08);
 }
 
 .message-me {
@@ -463,8 +467,8 @@
     align-items: center;
     gap: 10px;
     padding: 12px 16px;
-    background: white;
-    border-top: 1px solid rgba(0,0,0,0.06);
+    background: #FFFBF7;
+    border-top: 1px solid rgba(255,132,17,0.1);
 }
 
 .message-input-box input {
@@ -472,7 +476,7 @@
     border: none;
     outline: none;
     font-size: 14px;
-    background: #f5f5f5;
+    background: #FFF4E8;
     padding: 10px 16px;
     border-radius: 14px;
     color: #333;
@@ -530,7 +534,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #FFFBF7;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -542,7 +546,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 18px 20px;
-    background: white;
+    background: #FFFBF7;
     color: #111;
     flex-shrink: 0;
     border-bottom: 2px solid rgba(255,132,17,0.15);
@@ -581,7 +585,7 @@
     gap: 8px;
     margin: 12px;
     padding: 9px 14px;
-    background: #f5f5f5;
+    background: #FFF4E8;
     border-radius: 12px;
 }
 
@@ -625,7 +629,7 @@
 /* Settings */
 .settings-section {
     padding: 15px 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
 }
 
 .settings-profile {
@@ -715,13 +719,13 @@ input:checked + .slider:before {
 }
 
 .settings-select {
-    border: 1px solid #eee;
+    border: 1px solid rgba(255,132,17,0.2);
     border-radius: 8px;
     padding: 4px 10px;
     font-size: 13px;
     outline: none;
     color: #333;
-    background: #f9f9f9;
+    background: #FFF4E8;
 }
 
 /* Logout Button */
@@ -750,17 +754,23 @@ input:checked + .slider:before {
 /* Group Panel */
 .group-name-section {
     padding: 15px 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
 }
 
 .group-name-section input {
     width: 100%;
     padding: 10px 14px;
-    border: 2px solid #eee;
+    border: 2px solid rgba(255,132,17,0.15);
     border-radius: 12px;
     font-size: 14px;
     outline: none;
     transition: border 0.2s;
+    background: #FFF4E8;
+    color: #111;
+}
+
+.group-name-section input::placeholder {
+    color: #aaa;
 }
 
 .group-name-section input:focus {
@@ -775,7 +785,7 @@ input:checked + .slider:before {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     background: #fff8f2;
-    border-bottom: 1px solid rgba(0,0,0,0.04);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
 }
 
 .group-contacts-list {
@@ -818,8 +828,8 @@ input:checked + .slider:before {
 
 .group-create-footer {
     padding: 15px 20px;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    background: white;
+    border-top: 1px solid rgba(255,132,17,0.08);
+    background: #FFFBF7;
     position: sticky;
     bottom: 0;
 }
@@ -856,7 +866,7 @@ input:checked + .slider:before {
 /* Status Panel */
 .status-my-section {
     padding: 15px 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
 }
 
 .status-my-item {
@@ -892,7 +902,7 @@ input:checked + .slider:before {
     font-size: 13px;
     color: white;
     font-weight: bold;
-    border: 2px solid white;
+    border: 2px solid #FFFBF7;
 }
 
 .status-my-info { flex: 1; }
@@ -911,7 +921,7 @@ input:checked + .slider:before {
 
 .status-input-section {
     padding: 12px 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
     flex-direction: column;
     gap: 10px;
     background: #fff8f2;
@@ -920,10 +930,11 @@ input:checked + .slider:before {
 .status-input-section input {
     width: 100%;
     padding: 10px 14px;
-    border: 2px solid #eee;
+    border: 2px solid rgba(255,132,17,0.15);
     border-radius: 12px;
     font-size: 14px;
     outline: none;
+    background: #FFFBF7;
 }
 
 .status-input-section input:focus {
@@ -952,7 +963,7 @@ input:checked + .slider:before {
     font-weight: 700;
     color: #FF8411;
     background: #fff8f2;
-    border-bottom: 1px solid rgba(0,0,0,0.04);
+    border-bottom: 1px solid rgba(255,132,17,0.08);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -1081,10 +1092,10 @@ input:checked + .slider:before {
     line-height: 1.6;
 }
 
-/* ← UPDATED: Profile Panel */
+/* ===== PROFILE PANEL — HEIGHT FIX ===== */
 .profile-header {
-    background: white;
-    padding: 30px 20px;
+    background: #FFFBF7;
+    padding: 16px 20px -1px;   /* ← kam kiya (was 30px) */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1092,10 +1103,9 @@ input:checked + .slider:before {
     border-bottom: 2px solid rgba(255,132,17,0.15);
 }
 
-/* ← UPDATED: Profile Close Button */
 .profile-close-btn {
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 15px;
     width: 32px;
     height: 32px;
@@ -1118,17 +1128,17 @@ input:checked + .slider:before {
 
 .profile-avatar-section {
     position: relative;
-    margin-top: 10px;
+    margin-top: 6px;   /* ← kam kiya (was 10px) */
 }
 
-/* ← UPDATED: Profile Avatar */
+/* ===== PROFILE AVATAR — SMALLER ===== */
 .profile-avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 28px;
+    width: 65px;           /* ← 90px se 65px */
+    height: 65px;          /* ← 90px se 65px */
+    border-radius: 20px;   /* ← 28px se 20px */
     background: #FF8411;
     color: white;
-    font-size: 36px;
+    font-size: 26px;       /* ← 36px se 26px */
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -1141,30 +1151,32 @@ input:checked + .slider:before {
     position: absolute;
     bottom: -5px;
     right: -5px;
-    width: 30px;
-    height: 30px;
+    width: 26px;           /* ← 30px se 26px */
+    height: 26px;
     background: #2ecc71;
-    border-radius: 10px;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid #FFFBF7;
 }
 
 .profile-avatar-overlay i {
-    font-size: 14px;
+    font-size: 12px;       /* ← 14px se 12px */
     color: white;
 }
 
 .profile-info-section {
     flex: 1;
     overflow-y: auto;
+    background: #FFFBF7;
+    padding: 8px 16px;     /* ← padding add kiya */
 }
 
 .profile-field {
-    padding: 16px 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 14px 4px;     /* ← 16px 20px se kam kiya */
+    border-bottom: 1px solid rgba(255,132,17,0.08);
     position: relative;
 }
 
@@ -1220,7 +1232,7 @@ input:checked + .slider:before {
 
 .profile-edit-icon {
     position: absolute;
-    right: 20px;
+    right: 4px;
     top: 50%;
     transform: translateY(-50%);
     color: #bbb;
@@ -1231,8 +1243,9 @@ input:checked + .slider:before {
 .profile-edit-icon:hover { color: #FF8411; }
 
 .profile-logout-section {
-    padding: 20px;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 16px 20px;
+    border-top: 1px solid rgba(255,132,17,0.08);
+    background: #FFFBF7;
 }
 
 /* ===== DARK MODE ===== */
@@ -1360,7 +1373,6 @@ body.dark-mode .panel-close-btn:hover {
 }
 
 body.dark-mode .panel-search { background: #222; }
-
 body.dark-mode .panel-search input { color: #ccc; }
 
 body.dark-mode .contact-item:hover {
@@ -1441,9 +1453,7 @@ body.dark-mode .status-name { color: #e0e0e0; }
 body.dark-mode .status-time { color: #666; }
 
 body.dark-mode .profile-info-section { background: #161616; }
-
 body.dark-mode .profile-field { border-color: rgba(255,255,255,0.05); }
-
 body.dark-mode .profile-field-value { color: #ccc; }
 
 body.dark-mode .profile-field-edit input {
@@ -1451,7 +1461,6 @@ body.dark-mode .profile-field-edit input {
     border-color: #FF8411;
 }
 
-/* ← UPDATED: Dark mode profile */
 body.dark-mode .profile-header {
     background: #1a1a1a;
     border-color: rgba(255,132,17,0.2);
@@ -1478,10 +1487,12 @@ body.dark-mode .profile-logout-section {
 }
 
 body.dark-mode .welcome-screen h2 { color: #888; }
+body.dark-mode .welcome-screen { background: #0f0f0f; }
 
 body.dark-mode .welcome-icon {
     box-shadow: 0 8px 25px rgba(255,132,17,0.2);
 }
+
 /* ===== SCROLLBAR ===== */
 .chat-list::-webkit-scrollbar,
 .messages-area::-webkit-scrollbar,
@@ -1498,7 +1509,7 @@ body.dark-mode .welcome-icon {
 .profile-info-section::-webkit-scrollbar-track,
 .group-contacts-list::-webkit-scrollbar-track,
 .status-list::-webkit-scrollbar-track {
-    background: #f5f5f5;
+    background: #FFF4E8;
     border-radius: 10px;
 }
 
@@ -1521,7 +1532,6 @@ body.dark-mode .welcome-icon {
     background: #FF8411;
 }
 
-/* Dark mode scrollbar */
 body.dark-mode .chat-list::-webkit-scrollbar-track,
 body.dark-mode .messages-area::-webkit-scrollbar-track,
 body.dark-mode .side-panel::-webkit-scrollbar-track,
@@ -1538,4 +1548,38 @@ body.dark-mode .profile-info-section::-webkit-scrollbar-thumb,
 body.dark-mode .group-contacts-list::-webkit-scrollbar-thumb,
 body.dark-mode .status-list::-webkit-scrollbar-thumb {
     background: rgba(255,132,17,0.2);
+}
+
+/* Chat Menu */
+.chat-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.chat-menu-item:hover {
+    background: #fff8f2;
+}
+
+.chat-menu-item i {
+    font-size: 16px;
+    width: 20px;
+}
+
+.chat-menu-dark {
+    background: #1e1e1e !important;
+    border-color: rgba(255,132,17,0.2) !important;
+}
+
+.chat-menu-dark .chat-menu-item {
+    color: #e0e0e0;
+}
+
+.chat-menu-dark .chat-menu-item:hover {
+    background: rgba(255,132,17,0.08);
 }

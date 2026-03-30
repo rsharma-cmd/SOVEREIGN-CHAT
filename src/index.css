@@ -2,6 +2,7 @@
 @import './styles/register.css';
 @import './styles/download.css';
 @import './styles/chat.css';
+@import './styles/landing.css';
 
 :root {
   --text: #6b6375;

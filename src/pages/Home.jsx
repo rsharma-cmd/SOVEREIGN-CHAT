@@ -66,7 +66,7 @@ function Home() {
 
             <div className="qr-wrapper">
               <img src="/random_qr.png" alt="QR Code" className="qr-image" />
-              <div className="qr-overlay-text">Scan with Sovereign App</div>
+              <div className="qr-overlay-text">Scan with SOVREIGN App</div>
             </div>
 
             <div className="divider">
@@ -84,7 +84,7 @@ function Home() {
               </div>
               <div className="steps-content" id="steps-content" style={{ display: 'none' }}>
                 <ol>
-                  <li><i className="pi pi-mobile"></i> Open Sovereign on your phone</li>
+                  <li><i className="pi pi-mobile"></i> Open SOVREIGN on your phone</li>
                   <li><i className="pi pi-ellipsis-v"></i> Tap menu icon</li>
                   <li><i className="pi pi-link"></i> Tap Linked devices → Link device</li>
                   <li><i className="pi pi-qrcode"></i> Scan this QR code</li>

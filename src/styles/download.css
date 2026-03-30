@@ -52,7 +52,7 @@ body {
 .hero {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;  /* ← center se flex-start */
     gap: 60px;
     padding: 60px 40px;
     max-width: 1100px;
@@ -165,6 +165,7 @@ body {
 /* QR Card */
 .hero-right {
     flex-shrink: 0;
+    margin-top: 220px;
 }
 
 .qr-card {
